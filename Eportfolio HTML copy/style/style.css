@@ -1,0 +1,1114 @@
+a {
+  text-decoration: none;
+  color: black;
+  user-select: none;
+}
+
+.mptitletext {
+  text-align: center;
+  margin: auto;
+  height: auto;
+  position: relative;
+  font-size: 50px;
+  top: 6px;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.mptitle {
+  margin-top: 15%;
+  margin-left: 436px;
+  background-color: #40916c;
+  height: 70px;
+  width: 260px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-style: italic;
+}
+
+.mptitledescrip {
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  margin: 14px;
+  margin-top: 10px;
+  top: 0px;
+  line-height: 22px;
+}
+
+.mpdescrip {
+  opacity: 0;
+  width: 260px;
+  height: 108px;
+  margin-left: 437px;
+  margin-top: -90px;
+  border: 1px solid black;
+}
+
+#mpt:hover ~ #mpd {
+  opacity: 1;
+  background-color: #FEFFD4;
+  margin-top: -1px;
+  transition: 0.5s;
+}
+
+#mpd:hover {
+  opacity: 1;
+  background-color: #FEFFD4;
+  transition: 0.5s;
+  margin-top: -1px;
+}
+
+.mpdescrip:not(:hover) {
+  opacity: 0;
+  margin-top: -70px;
+  transition: 0.2s;
+}
+
+.btn1t {
+  padding: 0px 48px;
+  background-color: #F6FFF6;
+  margin-left: -1px;
+  margin-top: -4px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn1ttext {
+  padding: 0 0;
+  white-space: nowrap;
+  font-weight: bolder;
+}
+
+.btn1t:hover {
+  transition: 1s;
+  background-color: orange;
+}
+
+.btn1t:not(:hover) {
+  transition: 0.5s;
+  background-color: white;
+}
+
+/*
+
+
+selection page under
+
+
+*/
+
+
+.selectionbody {
+  background-size: cover;
+}
+
+.learnmore {
+  height: 61px;
+  width: 121px;
+  border-radius: 30px;
+  background-color: #FFEA87;
+  margin-left: 700px;
+  margin-top: 270px;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  z-index: 1;
+}
+
+/*
+.lmset {
+  opacity: 0;
+  background-color: white;
+  overflow: hidden;
+  height: 60px;
+  width: 120px;
+  vertical-align: middle;
+}*/
+
+#lmschool {
+  position: absolute;
+  margin-top: -60.5px;
+  border-radius: 0px 30px 30px 0px;
+  opacity: 0;
+  background-color: white;
+  overflow: hidden;
+  height: 60px;
+  width: 120px;
+  margin-left: -62px;
+  vertical-align: middle;
+
+}
+
+#lmstudents {
+  position: absolute;
+  margin-top: -60.5px;
+  border-radius: 30px 0px 0px 30px;
+  opacity: 0;
+  background-color: white;
+  overflow: hidden;
+  height: 60px;
+  width: 120px;
+  margin-left: -62px;
+  vertical-align: middle;
+
+}
+
+#lmclasses {
+  position: absolute;
+  margin-top: -60.5px;
+  border-radius: 0px 0px 30px 30px;
+  opacity: 0;
+  background-color: white;
+  overflow: hidden;
+  height: 60px;
+  width: 120px;
+  margin-left: -62px;
+  vertical-align: middle;
+
+}
+
+#lmteachers {
+  position: absolute;
+  margin-top: -60.5px;
+  border-radius: 30px 30px 0px 0px;
+  opacity: 0;
+  background-color: white;
+  overflow: hidden;
+  height: 60px;
+  width: 120px;
+  margin-left: -62px;
+  vertical-align: middle;
+
+}
+
+.lmt {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  line-height: 60px;
+  user-select: none;
+}
+
+.lmtsch {
+  margin: 20px;
+}
+
+.lmtcla {
+  margin: 20px;
+}
+
+.lmtstu {
+  margin: 20px;
+}
+
+.lmttea {
+  margin: 20px;
+}
+
+.learnmore:hover {
+  border-radius: 0px;
+  transition: 0.3s;
+  word-wrap: normal;
+  cursor: pointer;
+}
+
+.learnmore:hover #lmclasses {
+  transform: translateY(61px);
+  opacity: 1;
+  background-color: #FFFDB3;
+  transition: 0.5s;
+  border: 0.01px solid black;
+}
+
+.learnmore:hover #lmteachers {
+  transform: translateY(-61px);
+  opacity: 1;
+  background-color: #FFFDB3;
+  transition: 0.5s;
+  border: 0.1px solid black;
+}
+
+.learnmore:hover #lmschool {
+  transform: translateX(121px);
+  opacity: 1;
+  background-color: #FFFDB3;
+  transition: 0.5s;
+  border: 0.01px solid black;
+}
+
+.learnmore:hover #lmstudents {
+  transform: translateX(-121px);
+  opacity: 1;
+  background-color: #FFFDB3;
+  transition: 0.5s;
+  border: 0.01px solid black;
+}
+
+.learnmore #lmstudents:hover {
+  cursor: pointer;
+}
+
+.learnmore #lmclasses:hover {
+  cursor: pointer;
+}
+
+.learnmore #lmteachers:hover {
+  cursor: pointer;
+}
+
+.learnmore #lmschool:hover {
+  cursor: pointer;
+}
+
+.learnmore #lmstudents:hover > .lmtstu {
+  align: center;
+  transform: scale(1.2);
+}
+
+.learnmore #lmclasses:hover > .lmtcla {
+  align: center;
+  transform: scale(1.2);
+}
+
+.learnmore #lmschool:hover > .lmtsch {
+  align: center;
+  transform: scale(1.2);
+}
+
+.learnmore #lmteachers:hover > .lmttea {
+  align: center;
+  transform: scale(1.2);
+}
+
+.learnmore #lmteachers:hover:active > .lmttea {
+  align: center;
+  transform: scale(1);
+}
+
+.learnmore #lmclasses:hover:active > .lmtcla {
+  align: center;
+  transform: scale(1);
+}
+
+.learnmore #lmstudents:hover:active > .lmtstu {
+  align: center;
+  transform: scale(1);
+}
+
+.learnmore #lmschool:hover:active > .lmtsch {
+  align: center;
+  transform: scale(1);
+}
+
+.ea {
+  left: 420px;
+  top: 180px;
+}
+
+.ea:hover {
+  background-color: #C2FFFE;
+  transition: 0.6s;
+}
+
+.ea:hover > .eatext {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.ea:hover:active {
+  padding: 2px 18px;
+  left: 422px;
+  top: 182px;
+  transition: 0s;
+}
+
+.ea:hover:not(active) {
+  left: 420px;
+  top: 180px;
+  padding: 4px 20px;
+  transition: 0s;
+}
+
+.calendar {
+  left: 800px;
+  top: 120px;
+}
+
+.calendar:hover {
+  background-color: #C2FFFE;
+  transition: 0.6s;
+}
+
+.calendar:hover > .catext {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.calendar:hover:active {
+  padding: 2px 18px;
+  left: 802px;
+  top: 122px;
+  transition: 0s;
+}
+
+.calendar:hover:not(active) {
+  left: 800px;
+  top: 120px;
+  padding: 4px 20px;
+  transition: 0s;
+}
+
+.cc {
+  left: 100px;
+  top: 240px;
+}
+
+.cc:hover {
+  background-color: #C2FFFE;
+  transition: 0.6s;
+}
+
+.cc:hover > .cctext {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.cc:hover:active {
+  padding: 2px 18px;
+  left: 102px;
+  top: 242px;
+  transition: 0s;
+}
+
+.cc:hover:not(active) {
+  left: 100px;
+  top: 240px;
+  padding: 4px 20px;
+  transition: 0s;
+}
+
+.aboutus {
+  left: 950px;
+  top: 350px;
+}
+
+.aboutus:hover {
+  background-color: #C2FFFE;
+  transition: 0.6s;
+}
+
+.aboutus:hover > .abtext {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.aboutus:hover:active {
+  padding: 2px 18px;
+  left: 952px;
+  top: 352px;
+  transition: 0s;
+}
+
+.aboutus:hover:not(active) {
+  left: 950px;
+  top: 350px;
+  padding: 4px 20px;
+  transition: 0s;
+}
+
+.au {
+  left: 200px;
+  top: 80px;
+}
+
+.au:hover {
+  background-color: #C2FFFE;
+  transition: 0.6s;
+}
+
+.au:hover > .autext {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.au:hover:active {
+  padding: 2px 18px;
+  left: 202px;
+  top: 82px;
+  transition: 0s;
+}
+
+.au:hover:not(active) {
+  left: 200px;
+  top: 80px;
+  padding: 4px 20px;
+  transition: 0s;
+}
+
+.cl {
+  left: 450px;
+  top: 180px;
+}
+
+.cl:hover {
+  background-color: #C2FFFE;
+  transition: 0.6s;
+}
+
+.cl:hover > .cltext {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.cl:hover:active {
+  padding: 2px 18px;
+  left: 452px;
+  top: 182px;
+  transition: 0s;
+}
+
+.cl:hover:not(active) {
+  left: 450px;
+  top: 180px;
+  padding: 4px 20px;
+  transition: 0s;
+}
+
+.ca {
+  left: 440px;
+  top: 400px;
+}
+
+.ca:hover {
+  background-color: #C2FFFE;
+  transition: 0.6s;
+}
+
+.ca:hover > .catext {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.ca:hover:active {
+  padding: 2px 18px;
+  left: 442px;
+  top: 402px;
+  transition: 0s;
+}
+
+.ca:hover:not(active) {
+  left: 440px;
+  top: 400px;
+  padding: 4px 20px;
+  transition: 0s;
+}
+
+.ca,.cl,.si,.au,.ac,.ea,.calendar,.aboutus,.cc {
+  padding: 4px 20px;
+  background-color: skyblue;
+  border-radius: 30px;
+  position: absolute;
+}
+
+/* article 1 page code */
+
+body {
+  margin: 0;
+}
+
+.article1bodyback {
+  background-image: linear-gradient(to bottom left, #DFFEBD, lightgreen);
+}
+
+table, th, td {
+  border: none;
+  margin: -2px;
+  padding: 0;
+}
+
+.aboutusp2 {
+  width: 70%;
+  display: inline-block;
+  float: left;
+}
+
+.aboutusp1 {
+  margin-right: 50px;
+}
+
+.article1welimg {
+  width: 200px;
+  height: 200px;
+  display: block;
+  float: right;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.aboutusp3 {
+  margin-top: 30px;
+  float: left;
+}
+
+.aboutuspe {
+  float: left;
+}
+
+/* common shit */
+
+.articleend {
+  margin-bottom: 50px;
+  float: left;
+}
+
+.articlep {
+  line-height: 2;
+  font-family: sans-serif;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.articletitle {
+  padding: 10px 10px;
+  width: 1133px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.articleseparation {
+  padding: 4px 502px;
+  background-color: black;
+  margin-top: -4px;
+}
+
+.bannersep2picart {
+  padding: 4px 502px;
+  background-color: black;
+  margin-top: 350px;
+  margin-bottom: 30px;
+}
+
+.articleverticalseparation {
+  position: absolute;
+  padding: 175px 4px;
+  background-color: black;
+  margin-top: 0px;
+  margin-left: 572px;
+}
+
+.btmenu {
+  padding: 24px 502px;
+  margin-right: 0px;
+  border-radius: 0;
+  border: none;
+  letter-spacing: 4px;
+  outline: none;
+  background-color: lightblue;
+  white-space: nowrap;
+  margin-bottom: -2px;
+}
+
+.btmenu:hover {
+  background-color: skyblue;
+}
+
+.btmenu:active {
+  padding: 24px 508px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.titlep {
+  padding: 10px 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.titlep2 {
+  padding: 20px 10px;
+  margin-left: 100px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -20px;
+  width: 933px;
+  background-color: white;
+}
+
+.communityimg {
+  width: cover;
+  height: 400px;
+}
+
+.bannerimg {
+  float: left;
+  width: 575px;
+  height: 350px;
+}
+
+.bannerimg2 {
+  float: right;
+  width: 575px;
+  height: 350px;
+}
+
+.learnp {
+  line-height: 2;
+  font-family: monospace;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 130%;
+  padding: 20px 14px;
+  background-color: white;
+  margin-top: -20px;
+}
+
+.learnpl {
+  line-height: 2;
+  font-family: monospace;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 100%;
+  padding: 10px 6px;
+  background-color: white;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.learnend {
+  margin-left: 100px;
+  font-family: "Courier New";
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: -20px;
+  width: 939px;
+}
+
+.clubspe5 {
+  margin-left: 100px;
+  font-family: "Courier New";
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: -20px;
+  width: 933px;
+}
+
+.clubspe3 {
+  margin-left: 100px;
+  font-family: "Courier New";
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: -20px;
+  width: 943px;
+}
+
+.learnmtitle {
+  background-color: white;
+}
+
+/* article 2 */
+
+.article2welimg {
+  width: 400px;
+  height: 250px;
+  float: right;
+  margin-right: 70px;
+}
+
+.easp2 {
+  width: 50%;
+  float: left;
+  margin-right: 0px;
+}
+
+.easp3 {
+  float: left;
+}
+
+.easp4 {
+  float: left;
+}
+
+.article2bodyback {
+  background-image: radial-gradient(#FFD7D7, #FFFDD7);
+}
+
+/* article 3 */
+
+.article3img {
+  width: 300px;
+  height: 200px;
+  float: right;
+  margin-right: 70px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.clcp4 {
+  float: right;
+  width: 53%;
+}
+
+.article3img2 {
+  width: 400px;
+  height: 260px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: -20px;
+}
+
+.clcp5 {
+  float: left;
+}
+
+.clcp6 {
+  float: left;
+}
+
+.article3bodyback {
+  background-image: linear-gradient(#FFE9FF, #F4E9FF);
+}
+
+/* students page */
+
+.studentsphoto {
+  width: cover;
+  height: 370px;
+}
+
+.studentbodyback {
+  background-image: linear-gradient(#ECECEC, lightgrey);
+}
+
+/* classes page */
+
+.classesphoto {
+  width: cover;
+  height: 319.5px;
+}
+
+/* school page */
+
+.schoolphoto {
+  width: cover;
+  height: 400px;
+}
+
+/* teachers page */
+
+.f2f {
+  margin-bottom: 50px;
+}
+
+.teacherphoto {
+  width: cover;
+  height: 481px;
+}
+
+/* calendar common */
+
+.calev {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: skyblue;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.calevb {
+  position: absolute;
+  width: 102px;
+  height: 102px;
+  border-radius: 50px;
+  background-color: skyblue;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.calev:hover {
+  background-color: lightblue;
+}
+
+.cp {
+  margin-top: 40px;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.cpbutton {
+  margin-top: 14px;
+  margin-left: 6px;
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.cpna {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.cpnab {
+  margin-top: 14px;
+  font-size: 14px;
+  outline: none;
+}
+
+.cp42 {
+  margin-top: 10px;
+}
+
+.cp59 {
+  margin-top: 20px;
+}
+
+.cp9 {
+  margin-top: 14px;
+}
+
+.cp1 {
+  font-size: 14px;
+}
+
+.cp2 {
+  font-size: 14px;
+}
+
+.cp3 {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.cp4 {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.cp5 {
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.calev1 {
+  left: 250px;
+  top: 100px;
+}
+
+.calev2 {
+  left: 550px;
+  top: 60px;
+}
+
+.calev3 {
+  left: 750px;
+  top: 200px;
+}
+
+.calev4 {
+  left: 450px;
+  top: 300px;
+}
+
+.calev5 {
+  left: 650px;
+  top: 450px;
+}
+
+.testarrow1 {
+  width: 200px;
+  height: 100px;
+  border-radius: 50% 50% 0px 0px;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: red transparent transparent transparent;
+  left: 350px;
+  top: 100px;
+  position: absolute;
+  transform: rotate(-10deg);
+}
+
+.testarrow2 {
+  width: 170px;
+  height: 100px;
+  border-radius: 50% 50% 0px 0px;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: red transparent transparent transparent;
+  left: 610px;
+  top: 130px;
+  position: absolute;
+  transform: rotate(35deg);
+}
+
+.testarrow3 {
+  width: 240px;
+  height: 100px;
+  border-radius: 50% 50% 0px 0px;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: red transparent transparent transparent;
+  left: 530px;
+  top: 250px;
+  position: absolute;
+  transform: rotate(160deg);
+}
+
+.testarrow4 {
+  width: 200px;
+  height: 100px;
+  border-radius: 50% 50% 0px 0px;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: red transparent transparent transparent;
+  left: 495px;
+  top: 385px;
+  position: absolute;
+  transform: rotate(-140deg);
+}
+
+.calbody {
+  background-image: radial-gradient(white, #C5E7FE);
+}
+
+.lol {
+  height: 610px;
+  width: 1200px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: radial-gradient(white, #C5E7FE);
+}
+
+.arrowleft {
+  position: absolute;
+  border: solid black;
+  padding: 13px 13px;
+  border-width: 0 10px 10px 0;
+  transform: rotateZ(135deg);
+  top: 135px;
+  left: 170px;
+}
+
+.arrowleft:hover {
+  border: solid #444444;
+  border-width: 0 11px 11px 0;
+  padding: 14px 14px;
+  top: 134px;
+  left: 169px;
+}
+
+.arrowright {
+  position: absolute;
+  border: solid black;
+  padding: 13px 13px;
+  border-width: 0 10px 10px 0;
+  transform: rotateZ(-45deg);
+  top: 485px;
+  left: 800px;
+}
+
+.arrowright:hover {
+  border: solid #444444;
+  border-width: 0 11px 11px 0;
+  padding: 14px 14px;
+  top: 484px;
+  left: 799px;
+}
+
+.calbackbtn {
+  padding: 20px 40px;
+  position: absolute;
+  background-color: #20A4F7;
+  font-size: 120%;
+  border-radius: 0px 0px 100px 0px;
+}
+
+.calbackbtn:hover {
+  font-size: 130%;
+}
+
+.calbackbtn:hover:active {
+  font-size: 120%;
+}
+
+.monthname {
+  position: absolute;
+  font-size: 50px;
+  top: 170px;
+  left: 500px;
+}
+
+.canceled {
+  transform: rotateZ(30deg);
+  font-size: 70px;
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  white-space: nowrap;
+  z-index: 0.1;
+}
+
+/* javascript test */
+
+
+#calappearbox{
+  width: 440px;
+  height: 300px;
+  position: absolute;
+  left: 360px;
+  top: 150px;
+  z-index: 1;
+  display: none;
+  background-color: lightgrey;
+  border-radius: 50px;
+}
+
+#caltap {
+  text-align: center;
+  font-size: 24px;
+  margin-left: 70px;
+}
+
+#calttb {
+  text-align: center;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#closecab {
+  float: right;
+  margin-right: 40px;
+  margin-top: 22px;
+  font-size: 34px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.cal1ev3 {
+  font-size: 10px;
+}
+
+/* end finally! */
